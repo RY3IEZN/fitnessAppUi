@@ -1,20 +1,19 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+/** @format */
+
+import { StatusBar } from "expo-status-bar";
+import { StyleSheet, Text, View, Image } from "react-native";
+import GetStarted from "./Screens/GetStarted";
+import SplashScreen1 from "./Screens/SplashScreen1";
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+  return <SplashScreen1 />;
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: "#fff",
+    alignItems: "center",
+    justifyContent: "center",
   },
 });
