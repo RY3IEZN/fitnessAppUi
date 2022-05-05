@@ -14,23 +14,42 @@ function LandingPage({ navigation }) {
         }}
       >
         <Image source={require("../assets/landingpageimg.png")} />
-        <Text>Welcome Back, Uneku</Text>
+        <Text
+          style={{
+            marginTop: 40,
+            color: "#9DCEFF",
+            fontWeight: "700",
+            fontSize: 30,
+          }}
+        >
+          Welcome Back,
+        </Text>
         <Text
           style={{
             alignItems: "center",
             textAlign: "center",
             color: "grey",
+            fontSize: 15,
           }}
         >
           You are all set now, lets reach your
         </Text>
-        <Text>goals together with us</Text>
+        <Text
+          style={{
+            alignItems: "center",
+            textAlign: "center",
+            color: "grey",
+            fontSize: 15,
+          }}
+        >
+          goals together with us
+        </Text>
         <TouchableOpacity
           style={{
             width: "80%",
             height: 50,
             backgroundColor: "#7990CB",
-            marginTop: 250,
+            marginTop: 230,
             borderRadius: 20,
             justifyContent: "center",
             alignItems: "center",
