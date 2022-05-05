@@ -2,15 +2,16 @@
 
 import React from "react";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
-import { TouchableOpacity, View, StyleSheet, Image, Text } from "react-native";
 
-function SplashScreen1({ navigation }) {
+import { View, StyleSheet, Image, Text, TouchableOpacity } from "react-native";
+
+function SplashScreen3({ navigation }) {
   return (
     <View style={styles.container}>
       <Image
         style={{ width: "100%" }}
         resizeMode="cover"
-        source={require("../assets/splashscreenimg1.png")}
+        source={require("../assets/splashscreenimg3.png")}
       />
       <Text
         style={{
@@ -21,19 +22,19 @@ function SplashScreen1({ navigation }) {
           marginTop: 30,
         }}
       >
-        Track Your Goals
+        Eat Well
       </Text>
       <Text
         style={{
           marginHorizontal: 20,
           color: "grey",
           fontWeight: "700",
-          fontSize: 15,
+          fontSize: 13,
           marginTop: 10,
         }}
       >
-        Dont worry if you having trouble determing your goals,we can help you
-        determine your goals and track your goals.
+        Lets start a health lifestyle with us , we can determine your diet
+        everyday, eating healthy is fun
       </Text>
 
       <View
@@ -56,7 +57,7 @@ function SplashScreen1({ navigation }) {
           Skip
         </Text>
         <TouchableOpacity
-          onPress={() => navigation.navigate("ss2")}
+          onPress={() => navigation.navigate("ss4")}
           style={{
             width: 70,
             height: 70,
@@ -81,4 +82,4 @@ const styles = StyleSheet.create({
   container: {},
 });
 
-export default SplashScreen1;
+export default SplashScreen3;

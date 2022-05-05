@@ -3,7 +3,7 @@
 import React from "react";
 import { View, StyleSheet, TouchableOpacity, Image, Text } from "react-native";
 
-function GetStarted(props) {
+function GetStarted({ navigation }) {
   return (
     <View style={styles.container}>
       <Text>kkkkk</Text>
@@ -18,6 +18,7 @@ function GetStarted(props) {
       </View>
 
       <TouchableOpacity
+        onPress={() => navigation.navigate("ss1")}
         style={{
           marginHorizontal: 20,
           backgroundColor: "white",
