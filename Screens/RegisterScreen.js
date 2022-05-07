@@ -15,6 +15,7 @@ import { Ionicons } from "@expo/vector-icons";
 
 function RegisterScreen(props) {
   const [ticked, setTicked] = useState(false);
+  const [visible, setVisible] = useState(true);
   return (
     <View style={styles.container}>
       <Text
@@ -118,8 +119,14 @@ function RegisterScreen(props) {
           <MaterialCommunityIcons name="lock" size={24} color="grey" />
           <TextInput
             placeholder="Password"
-            secureTextEntry
+            secureTextEntry={visible}
             style={{ width: "80%", marginHorizontal: 10 }}
+          />
+          <MaterialCommunityIcons
+            onPress={() => setVisible(!visible)}
+            name={visible ? "eye-off-outline" : "eye-outline"}
+            size={24}
+            color="black"
           />
         </View>
       </View>
