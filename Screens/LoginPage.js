@@ -12,7 +12,7 @@ import {
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { Ionicons } from "@expo/vector-icons";
 
-function LoginPage(props) {
+function LoginPage({ navigation }) {
   return (
     <View style={styles.container}>
       <Text
@@ -89,6 +89,7 @@ function LoginPage(props) {
       </Text>
 
       <TouchableOpacity
+        onPress={() => navigation.navigate("ProfileCheck")}
         style={{
           width: "80%",
           height: 50,
@@ -186,7 +187,13 @@ function LoginPage(props) {
         }}
       >
         <Text>Dont have an account yet?</Text>
-        <Text style={{ color: "#7990CB" }}> Register</Text>
+        <Text
+          onPress={() => navigation.navigate("Register")}
+          style={{ color: "#7990CB" }}
+        >
+          {" "}
+          Register
+        </Text>
       </View>
     </View>
   );

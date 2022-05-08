@@ -20,7 +20,7 @@ function ProfileType(props) {
           width: 290,
           height: 500,
           backgroundColor: "#7990CB",
-          marginHorizontal: 10,
+          marginHorizontal: 50,
           marginTop: 10,
           borderRadius: 20,
           justifyContent: "center",
@@ -99,6 +99,9 @@ function ProfileType(props) {
         that best fits you
       </Text>
       <FlatList
+        snapToAlignment={"center"}
+        decelerationRate={"fast"}
+        pagingEnabled={true}
         horizontal
         showsHorizontalScrollIndicator={false}
         snapToInterval={2}

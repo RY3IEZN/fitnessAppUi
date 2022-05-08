@@ -13,7 +13,7 @@ import {
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { Ionicons } from "@expo/vector-icons";
 
-function RegisterScreen(props) {
+function RegisterScreen({ navigation }) {
   const [ticked, setTicked] = useState(false);
   const [visible, setVisible] = useState(true);
   return (
@@ -136,7 +136,13 @@ function RegisterScreen(props) {
           marginTop: 10,
         }}
       >
-        <View style={{ flexDirection: "row", alignItems: "center" }}>
+        <View
+          style={{
+            flexDirection: "row",
+            alignItems: "center",
+            marginHorizontal: 20,
+          }}
+        >
           <MaterialCommunityIcons
             onPress={() => setTicked(!ticked)}
             name={ticked ? "checkbox-marked" : "checkbox-blank-outline"}
@@ -211,7 +217,7 @@ function RegisterScreen(props) {
           justifyContent: "center",
           alignItems: "center",
           position: "absolute",
-          top: 670,
+          top: 660,
           left: 190,
         }}
       >
@@ -263,7 +269,13 @@ function RegisterScreen(props) {
         }}
       >
         <Text>Already have an account?</Text>
-        <Text style={{ color: "#7990CB" }}> Login</Text>
+        <Text
+          onPress={() => navigation.navigate("Login")}
+          style={{ color: "#7990CB" }}
+        >
+          {" "}
+          Login
+        </Text>
       </View>
     </View>
   );

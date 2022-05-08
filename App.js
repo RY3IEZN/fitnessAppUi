@@ -10,7 +10,7 @@ import ProfileType from "./Screens/ProfileType";
 import RegisterScreen from "./Screens/RegisterScreen";
 
 export default function App() {
-  return <ProfileType />;
+  return <Navigators />;
 }
 
 const styles = StyleSheet.create({

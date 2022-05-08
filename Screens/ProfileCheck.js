@@ -12,7 +12,7 @@ import {
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { Ionicons } from "@expo/vector-icons";
 
-function ProfileCheck(props) {
+function ProfileCheck({ navigation }) {
   return (
     <View style={styles.container}>
       <Image
@@ -151,6 +151,7 @@ function ProfileCheck(props) {
       </View>
 
       <TouchableOpacity
+        onPress={() => navigation.navigate("ProfileType")}
         style={{
           width: "80%",
           height: 50,
